@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daraz - Website - Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01V8uEDV1jdZ9U2wL90_!!6000000004571-73-tps-64-64.ico">
+</head>
+<body class="bg-[#F5F5F5]">
+    <header>
+        <div class="w-full bg-[#f65505] h-[30px] flex justify-end ">
+            <div class="mr-3">
+            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-10">SAVE MORE ON APP</span>
+            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-10">SELL ON DARAZ</span>
+            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-10">HELP & SUPPORT</span>
+            </div>
+            <div>
+                <button class="text-[12.5px] font-[500] tracking-wide text-white mr-10">LOGIN</button>
+                <button class="text-[12.5px] font-[500] tracking-wide text-white mr-10">SIGN UP</button>
+                <button class="text-[12.5px] font-[500] tracking-wide text-white mr-10">CHANGE LANGUAGE</button>
+            </div>
+        </div>
+        <div class="w-full bg-[#f65505] h-[80px]  flex items-center justify-between">
+            <div class="w-[25%]  py-3 justify-center flex">
+                <img src="https://lzd-img-global.slatic.net/us/domino/3b870cb043c7f8a9741cbf66329e294e.png" alt="Online Shopping Daraz.PK Logo" class="w-30 h-10">
+            </div>
+            <div class="flex w-[75%]  py-2">
+                <div class="flex  px-2 py-1 w-[70%]">
+                    <input type="text" class="w-[70%] h-[45px] rounded-l-[2px] border-none outline-none px-4" placeholder="Find this products">
+                    <i class="ri-search-line class h-[45px] border py-2 px-4 text-[20px] text-orange-400 bg-orange-100 cursor-pointer"></i>                
+                    <i class="ri-shopping-cart-2-line ml-10 my-auto text-3xl text-white"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="max-w-[1100px] flex  h-auto mx-auto">
+        <div class="sm:w-[100%] md:w-[80%] slider flex h-[350px] overflow-hidden relative group">
+            <div id="slider" class="flex  transition-transform duration-700 ">
+            <img src="https://img.lazcdn.com/us/domino/7578b69e-db64-42d8-84ab-0b9845edf8cd_PK-1976-688.jpg_2200x2200q80.jpg_.avif" class="w-full flex-shrink-0">
+            <img src="https://img.lazcdn.com/us/domino/c811bda8-ff1b-4544-8f1a-4931564d2d30_PK-1976-688.jpg_2200x2200q80.jpg_.avif" class="w-full flex-shrink-0">
+            <img src="https://img.lazcdn.com/us/domino/5752ff76-7ea1-457b-9195-4f1d4093874c_PK-1976-688.jpg_2200x2200q80.jpg_.avif" class="w-full flex-shrink-0">
+        </div>
+        <button id="prev" class="absolute bottom-[50%] left-0">
+            <i class="ri-arrow-left-s-line text-[30px] text-white bg-black/40 hover:bg-black/50 hidden group-hover:block rounded-r-[15px] font-thin duration-700 transition-transform"></i>
+        </button>
+        <button id="next" class="absolute bottom-[50%] right-0">
+            <i class="ri-arrow-right-s-line text-[30px] text-white hidden group-hover:block bg-black/40 hover:bg-black/50 rounded-l-[15px] font-thin duration-700 transition-transform"></i>
+        </button>
+        <div id="dots" class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            
+        </div>
+        </div>
+        <div class="w-[20%] hidden md:block h-[350px] bg-red-200/80">
+            <div class="flex py-2">
+                <img src="./img/Daraz-Emblem.png" class="w-[90px]">
+                <p class="flex items-center text-[15px] font-semibold text-orange-700">TRY DARAZ APP</p>
+            </div>
+            <div class="w-full h-[170px] border border-2 bg-gradient-to-t from-pink-500/90 to-orange-600 p-2">
+                <p class="text-[13px] font-[500] text-white/90"><i class="ri-star-s-fill"></i>4.8Rated</p>
+                <p class="text-[13px] font-[500] text-white/90 text-center mt-1">Dowload the App now</p>
+                <div class="flex mt-3 gap-3 flex justify-center items-center pr-12">
+                    <img src="./img/bas-img.avif" alt="img1" class="w-10">
+                    <p class="max-w-[10px] text-[15px] font-[500] text-white/90 text-center leading-none">Free Shopping</p>
+                </div>
+                <div class="flex mt-3 gap-3 flex justify-center items-center pr-12">
+                    <img src="./img/token-img.avif" alt="img1" class="w-10">
+                    <p class="max-w-[10px] text-[15px] font-[500] text-white/90 text-center leading-none">Exclusive Voucher</p>
+                </div>
+                <div class="flex">
+                    <div class="mt-4 border w-[80px]">
+                        <img src="./img/barcode.avif" class="w-[80px]">
+                    </div>
+                    <div class="mt-4 flex flex-col px-2 justify-center items-center">
+                        <button class="border border-black/60 shadow-sm px-[5px] py-[3px] rounded-[5px] text-[13px] font-semibold flex items-center gap-1 text-black/70"><i class="ri-apple-fill text-[17px] text-black/70"></i>App Store</button>
+                        <button class="border border-black/50 shadow-sm px-[5px] py-[3px] rounded-[5px] text-[12px] font-semibold flex items-center gap-1 mt-2">
+                            <img src="/img/google-play-Photoroom.png" class="w-5">
+                            Google Play</button>
+                    </div>
+                </div>
+                <p class="text-[13px] font-[500] text-black/70   mt-1">Dowload the App Now !</p>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-[1100px] flex  h-auto mt-5 mx-auto">
+    <img src="./img/section-2-img.webp" class="mt-2 mb-2">
+    </section>
+    <h1 class="ml-[83px] mb-1 text-2xl font-[500] text-black/60 mt-10">Flash Sale</h1>
+    <section class="max-w-[1100px] flex  h-auto pb-2  mx-auto border bg-white rounded-[3px] flex-col mb-5">
+        <div class="w-full h-[60px] border-b flex justify-between items-center px-5">
+            <h1 class="text-[15px]  text-orange-500 font-semibold">On Sale Now</h1>
+            <button class="border border-orange-500 py-1 px-3 rounded-[3px] text-[13px] text-orange-500 font-semibold">SHOP ALL PRODUCTS</button>
+        </div>
+        <div class="w-full flex items-center py-2 gap-3">
+            <div class="w-[200px] h-[280px] hover:shadow-xl shadow-gray-300 transition duration-400">
+                <div class="w-full h-[68%]">
+                    <img src="./img/sale-img-1.avif" class="w-full h-full">
+                </div>
+                <div class="w-full h-[32%]  px-2 pb-2">
+                    <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">Samsung Glaxy S26 Ultra - 512 GB - Get Free</p>
+                    <p class="text-[14px] font-semibold text-orange-400">Rs.489,997</p>
+                    <p class="text-[12px] font-semibold text-gray-400"><del>Rs.489,999</del></p>
+                </div>
+            </div>
+            <div class="w-[200px] h-[280px] hover:shadow-xl shadow-gray-300">
+                <div class="w-full h-[68%]  ">
+                    <img src="./img/sale-img-2.avif" class="w-full h-full">
+                </div>
+                <div class="w-full h-[32%]  px-2 pb-2">
+                    <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">Tea Whitener - NESTLE EVERYDAY Powder 560gram</p>
+                    <p class="text-[14px] font-semibold text-orange-400">Rs.1,076</p>
+                    <p class="text-[12px] font-semibold text-gray-400"><del>Rs.1,180</del><span> -9%</span></p>
+                </div>
+            </div>
+            <div class="w-[200px] h-[280px] hover:shadow-xl shadow-gray-300 transition duration-400">
+                <div class="w-full h-[68%]">
+                    <img src="./img/sale-img-3.avif" class="w-full h-full">
+                </div>
+                <div class="w-full h-[32%]  px-2 pb-2">
+                    <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">Dawlance/Canvas X UHD Google TV 55''/2 Years grante</p>
+                    <p class="text-[14px] font-semibold text-orange-400">Rs.89,499</p>
+                    <p class="text-[12px] font-semibold text-gray-400"><del>Rs.114,000</del><span class="text-black"> -21%</span></p>
+                </div>
+            </div>
+            <div class="w-[200px] h-[280px] hover:shadow-xl shadow-gray-300">
+                <div class="w-full h-[68%]  ">
+                    <img src="./img/sale-img-4.avif" class="w-full h-full">
+                </div>
+                <div class="w-full h-[32%]  px-2 pb-2">
+                    <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">Dawlance Air Conditioner</p>
+                    <p class="text-[14px] font-semibold text-orange-400">Rs.489,997</p>
+                    <p class="text-[12px] font-semibold text-gray-400"><del>Rs.489,999</del></p>
+                </div>
+            </div>
+            <div class="w-[200px] h-[280px] hover:shadow-xl shadow-gray-300 transition duration-400">
+                <div class="w-full h-[68%]">
+                    <img src="./img/sale-img-1.avif" class="w-full h-full">
+                </div>
+                <div class="w-full h-[32%]  px-2 pb-2">
+                    <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">Samsung Glaxy S26 Ultra - 512 GB - Get Free</p>
+                    <p class="text-[14px] font-semibold text-orange-400">Rs.489,997</p>
+                    <p class="text-[12px] font-semibold text-gray-400"><del>Rs.489,999</del></p>
+                </div>
+            </div>
+            <div class="w-[200px] h-[280px] hover:shadow-xl shadow-gray-300">
+                <div class="w-full h-[68%]  ">
+                    <img src="./img/sale-img-1.avif" class="w-full h-full">
+                </div>
+                <div class="w-full h-[32%]  px-2 pb-2">
+                    <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">Samsung Glaxy S26 Ultra - 512 GB - Get Free</p>
+                    <p class="text-[14px] font-semibold text-orange-400">Rs.489,997</p>
+                    <p class="text-[12px] font-semibold text-gray-400"><del>Rs.489,999</del></p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <script src="app.js"></script>
+</body>
+</html>
