@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daraz - Website - Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
@@ -11,13 +12,13 @@
     />
     <link rel="shortcut icon" href="https://laz-img-cdn.alicdn.com/imgextra/i1/O1CN01V8uEDV1jdZ9U2wL90_!!6000000004571-73-tps-64-64.ico">
 </head>
-<body class="bg-[#F5F5F5]">
+<body class="bg-[#F5F5F5] [font-family:'Poppins',sans-serif;]">
     <header>
-        <div class="w-full bg-[#f65505] h-[30px] flex justify-end ">
+        <div class="w-full bg-[#f65505] py-1 flex justify-end ">
             <div class="mr-3">
-            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-10">SAVE MORE ON APP</span>
-            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-10">SELL ON DARAZ</span>
-            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-10">HELP & SUPPORT</span>
+            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-3 sm:mr-6">SAVE MORE ON APP</span>
+            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-3 sm:mr-6">SELL ON DARAZ</span>
+            <span class="text-[12.5px] font-[500] tracking-wide text-white mr-3 sm:mr-6">HELP & SUPPORT</span>
             </div>
             <div>
                 <button class="text-[12.5px] font-[500] tracking-wide text-white mr-10">LOGIN</button>
@@ -25,14 +26,14 @@
                 <button class="text-[12.5px] font-[500] tracking-wide text-white mr-10">CHANGE LANGUAGE</button>
             </div>
         </div>
-        <div class="w-full bg-[#f65505] h-[80px]  flex items-center justify-between">
-            <div class="w-[25%]  py-3 justify-center flex">
+        <div class="w-full bg-[#f65505] py-3  flex items-center justify-between">
+            <div class="w-[40%] sm:w-[25%]  py-3 justify-center flex">
                 <img src="https://lzd-img-global.slatic.net/us/domino/3b870cb043c7f8a9741cbf66329e294e.png" alt="Online Shopping Daraz.PK Logo" class="w-30 h-10">
             </div>
             <div class="flex w-[75%]  py-2">
-                <div class="flex  px-2 py-1 w-[70%]">
-                    <input type="text" class="w-[70%] h-[45px] rounded-l-[2px] border-none outline-none px-4" placeholder="Find this products">
-                    <i class="ri-search-line class h-[45px] border py-2 px-4 text-[20px] text-orange-400 bg-orange-100 cursor-pointer"></i>                
+                <div class="flex  px-2 py-1 w-full md:w-[70%]">
+                    <input type="text" class="w-full md:w-[70%] h-[45px] rounded-l-[2px] border-none outline-none px-4" placeholder="Find this products">
+                    <i class="ri-search-line h-[45px] border py-2 px-4 text-[20px] text-orange-400 bg-orange-100 cursor-pointer"></i>                
                     <i class="ri-shopping-cart-2-line ml-10 my-auto text-3xl text-white"></i>
                 </div>
             </div>
@@ -95,8 +96,8 @@
             <h1 class="text-[15px]  text-orange-500 font-semibold">On Sale Now</h1>
             <button class="border border-orange-500 py-1 px-3 rounded-[3px] text-[13px] text-orange-500 font-semibold">SHOP ALL PRODUCTS</button>
         </div>
-        <div class="w-full grid grid-cols-6 bg-white gap-2 items-center py-2   justify-center">
-            <div class="w-[180px] h-[280px] hover:shadow-xl shadow-black transition duration-400">
+        <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 bg-white gap-2 items-center py-2   justify-center">
+            <div class="w-full h-[280px] hover:shadow-xl shadow-black transition duration-400">
                 <div class="w-full h-[68%]">
                     <img src="./img/sale-img-1.avif" class="w-full h-full">
                 </div>
@@ -106,7 +107,7 @@
                     <p class="text-[12px] font-semibold text-gray-400"><del>Rs.489,999</del></p>
                 </div>
             </div>
-            <div class="w-[180px] h-[280px] hover:shadow-xl shadow-gray-300">
+            <div class="w-full h-[280px] hover:shadow-xl shadow-gray-300">
                 <div class="w-full h-[68%]  ">
                     <img src="./img/sale-img-2.avif" class="w-full h-full">
                 </div>
@@ -116,7 +117,7 @@
                     <p class="text-[12px] font-semibold text-gray-400"><del>Rs.1,180</del><span class="text-black"> -9%</span></p>
                 </div>
             </div>
-            <div class="w-[180px] h-[280px] hover:shadow-xl shadow-gray-300 transition duration-400">
+            <div class=" w-full[280px] hover:shadow-xl shadow-gray-300 transition duration-400">
                 <div class="w-full h-[68%]">
                     <img src="./img/sale-img-3.avif" class="w-full h-full">
                 </div>
@@ -126,7 +127,7 @@
                     <p class="text-[12px] font-semibold text-gray-400"><del>Rs.114,000</del><span class="text-black"> -21%</span></p>
                 </div>
             </div>
-            <div class="w-[180px] h-[280px] hover:shadow-xl shadow-gray-300">
+            <div class="w-full h-[280px] hover:shadow-xl shadow-gray-300">
                 <div class="w-full h-[68%]  ">
                     <img src="./img/sale-img-4.avif" class="w-full h-full">
                 </div>
@@ -136,7 +137,7 @@
                     <p class="text-[12px] font-semibold text-gray-400"><del>Rs.101,000</del><span class="text-black"> -22%</span></p>
                 </div>
             </div>
-            <div class="w-[180px] h-[280px] hover:shadow-xl shadow-gray-300 transition duration-400">
+            <div class="w-full h-[280px] hover:shadow-xl shadow-gray-300 transition duration-400">
                 <div class="w-full h-[68%]">
                     <img src="./img/sale-img-5.avif" class="w-full h-full">
                 </div>
@@ -146,7 +147,7 @@
                     <p class="text-[12px] font-semibold text-gray-400"><del>Rs.2,599</del><span class="text-black"> -23%</span></p>
                 </div>
             </div>
-            <div class="w-[180px] h-[280px] hover:shadow-xl shadow-gray-300">
+            <div class="w-full h-[280px] hover:shadow-xl shadow-gray-300">
                 <div class="w-full h-[68%]  ">
                     <img src="./img/sale-img-6.avif" class="w-full h-full">
                 </div>
@@ -160,7 +161,7 @@
     </section>
     <section class="max-w-[1100px] flex  h-auto   mx-auto  rounded-[3px] flex-col mb-5">
         <h1 class="mb-2 text-2xl font-[500] text-black/60 mt-10">Categories</h1>
-        <div class="grid bg-white grid-cols-8 gap-0">
+        <div class="grid bg-white grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-0">
             <div class="h-[130px] border flex justify-center hover:shadow-xl shadow-black cursor-pointer items-center text-center flex-col">
                 <img src="./img/category-img-1.avif" class="w-[60%] h-[60%]">
                 <p class="text-[13px] font-semibold mt-1">3D Printers</p>
@@ -229,14 +230,14 @@
     </section>
     <section class="max-w-[1100px] flex  h-auto pb-2  mx-auto  rounded-[3px] flex-col mb-5">
          <h1 class="mb-2 text-2xl font-[500] text-black/60 mt-10">Just For You</h1>
-        <div class="grid grid-cols-6 gap-3">
-            <div class="h-[300px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
-                <div class="w-full h-[68%]">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
+            <div class="h-[280px] hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
+                <div class="w-full h-[65%]">
                     <img src="./img/card1.avif" class="w-full h-full">
                 </div>
-                <div class="w-full h-[32%]  px-2 pb-3">
+                <div class="w-full h-[40%]  px-2">
                     <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">T-Shirt And Short Pants For Baby Girls & Boys</p>
-                    <p class="text-[16px] font-semibold text-orange-400 mt-1">Rs.387 <span class="text-gray-500 text-[12px]">-68%</span></p>
+                    <p class="text-[17px] font-semibold text-orange-400 mt-1">Rs.387 <span class="text-gray-500 text-[12px]">-68%</span></p>
                     <div class="w-[40%] flex items-center mt-1">
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
@@ -246,13 +247,13 @@
                 </div>
                 </div>
             </div>
-            <div class="h-[300px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
-                <div class="w-full h-[68%]">
+            <div class="h-[280px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
+                <div class="w-full h-[65%]">
                     <img src="./img/card2.avif" class="w-full h-full">
                 </div>
-                <div class="w-full h-[32%]  px-2 pb-3">
+                <div class="w-full h-[40%]  px-2 pb-3">
                     <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">Automatic Counting Hand Gripper Adjustable</p>
-                    <p class="text-[16px] font-semibold text-orange-400 mt-1">Rs.299 <span class="text-gray-500 text-[12px]">-40%</span></p>
+                    <p class="text-[17px] font-semibold text-orange-400 mt-1">Rs.299 <span class="text-gray-500 text-[12px]">-40%</span></p>
                     <div class="w-[40%] flex items-center mt-1">
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
@@ -262,13 +263,13 @@
                 </div>
                 </div>
             </div>
-            <div class="h-[300px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
-                <div class="w-full h-[68%]">
+            <div class="h-[280px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
+                <div class="w-full h-[65%]">
                     <img src="./img/card3.avif" class="w-full h-full">
                 </div>
-                <div class="w-full h-[32%]  px-2 pb-3">
+                <div class="w-full h-[40%]  px-2 pb-3">
                     <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">SA Trader Premium Tracksuit - Multicolor</p>
-                    <p class="text-[16px] font-semibold text-orange-400 mt-1">Rs.872 <span class="text-gray-500 text-[12px]">-38%</span></p>
+                    <p class="text-[17px] font-semibold text-orange-400 mt-1">Rs.872 <span class="text-gray-500 text-[12px]">-38%</span></p>
                     <div class="w-[40%] flex items-center mt-1">
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
@@ -278,13 +279,13 @@
                 </div>
                 </div>
             </div>
-            <div class="h-[300px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
-                <div class="w-full h-[68%]">
+            <div class="h-[280px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
+                <div class="w-full h-[65%]">
                     <img src="./img/card4.avif" class="w-full h-full">
                 </div>
-                <div class="w-full h-[32%]  px-2 pb-3">
+                <div class="w-full h-[40%]  px-2 pb-3">
                     <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">3 in 1 Hair Dryer , Hair Straigthtener and Hair</p>
-                    <p class="text-[16px] font-semibold text-orange-400 mt-1">Rs.1,849</p>
+                    <p class="text-[17px] font-semibold text-orange-400 mt-1">Rs.1,849</p>
                     <div class="w-[40%] flex items-center mt-1">
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
@@ -294,13 +295,13 @@
                 </div>
                 </div>
             </div>
-            <div class="h-[300px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
-                <div class="w-full h-[68%]">
+            <div class="h-[280px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
+                <div class="w-full h-[65%]">
                     <img src="./img/card5.avif" class="w-full h-full">
                 </div>
-                <div class="w-full h-[32%]  px-2 pb-3">
+                <div class="w-full h-[40%]  px-2 pb-3">
                     <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">100,000 PKR Wooden Money Saving Box | Cass</p>
-                    <p class="text-[16px] font-semibold text-orange-400 mt-1">Rs.229 <span class="text-gray-500 text-[12px]">-54%</span></p>
+                    <p class="text-[17px] font-semibold text-orange-400 mt-1">Rs.229 <span class="text-gray-500 text-[12px]">-54%</span></p>
                     <div class="w-[40%] flex items-center mt-1">
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
@@ -310,13 +311,13 @@
                 </div>
                 </div>
             </div>
-            <div class="h-[300px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
-                <div class="w-full h-[68%]">
+            <div class="h-[280px]  hover:shadow-lg hover:shadow-black/10 cursor-pointer bg-white border-none transition duration-400">
+                <div class="w-full h-[65%]">
                     <img src="./img/card6.avif" class="w-full h-full">
                 </div>
-                <div class="w-full h-[32%]  px-2 pb-3">
+                <div class="w-full h-[40%]  px-2 pb-3">
                     <p class="text-[14.5px] font-semibold leading-[17px] mt-1 line-clamp-2">3Pcs Large Foldable Cloth Storage Zipper</p>
-                    <p class="text-[16px] font-semibold text-orange-400 mt-1">Rs.299</p>
+                    <p class="text-[17px] font-semibold text-orange-400 mt-1">Rs.299</p>
                     <div class="w-[40%] flex items-center mt-1">
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
                     <i class="ri-star-s-fill text-yellow-400 text-[15px]"></i>
@@ -617,8 +618,8 @@
         </div>
         <button class="w-[40%] px-3 py-2 border mt-10 mx-auto border-blue-500 text-blue-500">Load More</button>
      </section>
-     <footer class="w-full h-auto mb-10 border">
-        <div class="max-w-[1100px] grid grid-cols-4 mx-auto">
+     <footer class="w-full h-auto  mt-20">
+        <div class="max-w-[1100px] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 grid-cols-4 mx-auto">
             <div class=" h-auto py-2">
                 <h1 class="text-[18px] mb-2 text-[#0F1375] font-semibold">Customer Care</h1>
                 <p class="text-[13px] font-semibold text-[#0F1375]">Help Center</p>
@@ -663,6 +664,9 @@
                 <img src="./img/footer-img-3.png" class="w-[40%] m-1" >
             </div>
             </div>
+        </div>
+        <div class="max-w-[1100px] h-20 border-t-2 mx-auto mt-5">
+            <p class="text-center text-[13px] font-semibold pt-5 text-[#0F1375]">@2026, Create By Huzaifa Asif Powered By Daraz.pk</p>
         </div>
      </footer>
     <script src="app.js"></script>
